@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Game </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/index.css"/>
+        <style>
+            body {font-family: Tahoma, Verdana, Arial, sans-serif;
+                  font-size: 10px;
+                  height: 100%;
+                  overflow: hidden}
+        </style>
+
+    </head>
+    <body>
+    <div id = "bg">
+        <canvas id="canvasId" width="480" height="400" style='border:1px solid black; position:absolute; top: 0; left:0;' >
+            Ваш браузер не поддерживает эл. canvas
+        </canvas>
+        <div id="interface" style='position:absolute; top: 0; left:500px;'>
+            <font size="2">
+                <b>Игрок: <span id="name_player">Undefine</span></b> <br>
+                <b>Здоровье: <span id="HP">0</span></b> <br>
+                <b>Урон: <span id="DMG">0</span></b> <br><br>
+                <b>Уровень : <span id="level">1</span></b> <br>
+                <b>Счет: <span id="score">0</span></b> <br>
+
+            </font>
+            <br>
+            <br>
+            <canvas id="next_fig" class="next_fig"></canvas>
+        </div>
+    </div>
+
+
+
+
+    <script type="module">
+        import {GameManager} from '/script/GameManager.js';
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const canvas = document.getElementById("canvasId");
+            const gameManager = new GameManager(canvas, 1);
+            gameManager.play();
+        });
+    </script>
+    </body>
+</html>

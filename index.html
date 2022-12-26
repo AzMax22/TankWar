@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Танчики</title>
+
+    <style>
+        html { color-scheme: light ; }
+        body { width: 15em; margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif; }
+    </style>
+
+    <script type="text/javascript" src="script/index.js"></script>
+</head>
+
+
+<body bgcolor="#A0BEC4" onload="loadLastName()">
+<h1>Танчики</h1>
+
+<form action="game.html" method="get" onsubmit="save_name(this)">
+    <label>
+        Введите имя игрока:<br>
+        <br>
+        <input placeholder="Имя пользователя" id=name>
+    </label>
+
+    <br>
+
+    <input type="submit" value="Играть" onclick="save_name()">
+</form>
+
+<br>
+
+<button id="btn_score" onclick="btnScore()">Рекорды</button>
+
+<br>
+<div id = "div_score"  style="display: none" class = "div_score">
+    <p style="text-align: center;">Рекорды</p>
+    <p id="score"></p>
+</div>
+</body>
+</html>
