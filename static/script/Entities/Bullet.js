@@ -2,7 +2,7 @@ import {Entity} from './entity.js';
 import {EnemyTank} from "./EnemyTank.js";
 
 export class Bullet extends Entity {
-    move_x; //TODO: реализовать разное направление пуль
+    move_x ; //TODO: реализовать разное направление пуль
     move_y ;
     speed = 10;
     size_x = 6;
@@ -28,10 +28,10 @@ export class Bullet extends Entity {
             this.soundManager.play("probitie.mp3");
         }
         this.soundManager.play("bullet_collision.wav");
-       // this.kill();
+        this.kill();
     }
     onTouchMap(){
-       // this.kill();
+        this.kill();
         this.soundManager.play("bullet_collision.wav");
 
     }

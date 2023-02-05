@@ -62,10 +62,7 @@ export class PhysicManager {
             obj.onTouchMap(idx_t1);
         }
 
-        if (obj.name === "bullet"){
-            obj.pos_x = newX;
-            obj.pos_y = newY;
-        }
+
 
         if (idx_t1 === 0 && idx_t2 === 0 &&
             e1 === null && e2 === null) {

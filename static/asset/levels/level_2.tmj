@@ -282,6 +282,105 @@
                  "width":32,
                  "x":704,
                  "y":96
+                }, 
+                {
+                 "class":"Enemy_Tank",
+                 "gid":250,
+                 "height":32,
+                 "id":32,
+                 "name":"Enemy_Tank",
+                 "properties":[
+                        {
+                         "name":"direct_x",
+                         "type":"int",
+                         "value":1
+                        }, 
+                        {
+                         "name":"direct_y",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"real_height",
+                         "type":"int",
+                         "value":25
+                        }, 
+                        {
+                         "name":"real_width",
+                         "type":"int",
+                         "value":23
+                        }],
+                 "rotation":90,
+                 "visible":true,
+                 "width":32,
+                 "x":96,
+                 "y":384
+                }, 
+                {
+                 "class":"Enemy_Tank",
+                 "gid":250,
+                 "height":32,
+                 "id":33,
+                 "name":"Enemy_Tank",
+                 "properties":[
+                        {
+                         "name":"direct_x",
+                         "type":"int",
+                         "value":1
+                        }, 
+                        {
+                         "name":"direct_y",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"real_height",
+                         "type":"int",
+                         "value":25
+                        }, 
+                        {
+                         "name":"real_width",
+                         "type":"int",
+                         "value":23
+                        }],
+                 "rotation":90,
+                 "visible":true,
+                 "width":32,
+                 "x":608,
+                 "y":224
+                }, 
+                {
+                 "class":"Enemy_Tank",
+                 "gid":250,
+                 "height":32,
+                 "id":34,
+                 "name":"Enemy_Tank",
+                 "properties":[
+                        {
+                         "name":"direct_x",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"direct_y",
+                         "type":"int",
+                         "value":1
+                        }, 
+                        {
+                         "name":"real_height",
+                         "type":"int",
+                         "value":25
+                        }, 
+                        {
+                         "name":"real_width",
+                         "type":"int",
+                         "value":23
+                        }],
+                 "rotation":180,
+                 "visible":true,
+                 "width":32,
+                 "x":448,
+                 "y":160
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -316,7 +415,7 @@
          "y":0
         }],
  "nextlayerid":9,
- "nextobjectid":32,
+ "nextobjectid":36,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.9.2",
